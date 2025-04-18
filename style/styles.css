@@ -87,7 +87,7 @@ a:hover {
   background-color: var(--white);
   box-shadow: var(--box-shadow);
   padding: 15px 0;
-  position: sticky;
+  position: reltive;
   top: 0;
   z-index: 1000;
 }
@@ -231,7 +231,6 @@ a:hover {
   text-align: center;
 }
 
-
 /* About page */
 #about {
   background-color: var(--primary);
@@ -244,4 +243,42 @@ a:hover {
 
 #about h1 {
   color: var(--white);
+}
+
+/* products page */
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.product {
+  width: calc(25% - 20px);
+  height: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#backBtn {
+  background-color: greenyellow;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-sie: 16px;
+  cursor: pointer;
+}
+
+#backBtn:hover {
+  background-color: #45a049;
 }
