@@ -8,22 +8,15 @@
       name="description"
       content="A&R Hardware offers high-quality hardware tools, equipment, and repairs with over 20 years of experience."
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <style type="text/tailwindcss">
-      @theme {
-        --color-clifford: #da373d;
-      }
-    </style>
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header id="header">
       <div class="container">
         <div class="logo">
           <img
-            src="Logo.png"
+            src="public/mylogo.png"
             alt="A&R Hardware Logo"
             width="100"
             height="100"
@@ -44,23 +37,57 @@
     </header>
 
     <main>
-      <div class="img-slider-container">
-        <img class="img-slider" src="store.jpg" alt="A&R Hardware Store" />
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img id="storefront" src="public/store.jpg" alt="storefront" />
+          <div class="text">Store Front</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="public/inside.jpg" alt="inside" />
+          <div class="text">Inside</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img id="tools" src="public/tools.jpg" alt="tools" />
+          <div class="text">Tools</div>
+        </div>
+
+        <a class="prev cursor-pointer" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next cursor-pointer" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot cursor-pointer" onclick="currentSlide(1)"></span>
+        <span class="dot cursor-pointer" onclick="currentSlide(2)"></span>
+        <span class="dot cursor-pointer" onclick="currentSlide(3)"></span>
       </div>
 
       <section class="owner-info">
         <h2>Meet the owner: Iqbal Zafar</h2>
         <p>Iqbal Zafar has over 20 years of experience as a hardware owner</p>
-        <img src="owner.jpg" alt="Iqbal Zafar" width="200" height="200" />
+        <img
+          src="public/mylogo.png"
+          alt="Iqbal Zafar"
+          width="200"
+          height="200"
+        />
       </section>
 
       <footer id="footer">
         <p>&copy; Hardware all rights reserved 2001-2025</p>
         <p>
-          Website made by
-          <a href="https://www.linkedin.com/in/hassanz-/">Hassan Zafar</a>
+          Website made by<a href="https://rajahassanzafar.netlify.app/"
+            >Hassan Zafar</a
+          >
         </p>
       </footer>
     </main>
+
+    <script src="home.js"></script>
   </body>
 </html>
