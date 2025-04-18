@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact A&R Hardware Store for inquiries, feedback, or questions. We're here to assist you!"
+    />
+    <title>A&R Hardware Store - Contact Us</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Contact Us</h1>
+      <p>
+        If you have any questions, comments, or concerns, feel free to use this
+        form. The store is open from 10 AM to 7 PM, Monday to Saturday. You can
+        also reach us at <strong>(347) 955-5035</strong>
+      </p>
+    </header>
+
+    <main>
+      <form action="/submit_contact_form" method="POST">
+        <fieldset>
+          <legend>Contact Form</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Any feedback is appreciated!</legend>
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            required
+          ></textarea
+          ><br />
+
+          <input
+            type="submit"
+            value="Submit"
+            aria-label="Submit Contact Form"
+          />
+        </fieldset>
+      </form>
+    </main>
+
+    <footer id="footer">
+      <p>&copy; 2023 A&R Hardware Store. All rights reserved.</p>
+      <p>Website made by Hassan Zafar</p>
+    </footer>
+  </body>
+</html>
