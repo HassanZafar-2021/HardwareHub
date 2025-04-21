@@ -15,6 +15,15 @@
       <aside>
         <button id="backBtn">go Back</button>
       </aside>
+      <button onClick="toggleTheme()" id="theme-toggle-button">
+        <img
+          src="../public/lightMode.svg"
+          alt="sun/moon icon"
+          width="30"
+          height="30"
+          id="theme-icon"
+        />
+      </button>
       <h1>Contact Us</h1>
       <p>
         If you have any questions, comments, or concerns, feel free to use this
@@ -24,11 +33,7 @@
     </header>
 
     <main>
-      <form
-        action="mailto:rajaz26@gmail.com"
-        method="POST"
-        enctype="text/plain"
-      >
+      <form id="contact-form" name="contact-form">
         <div class="contact-wrapper">
           <fieldset class="contact-form">
             <legend>Contact Form</legend>
@@ -67,6 +72,12 @@
       </p>
     </footer>
 
+    <!-- Scripts -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- EmailJS SDK -->
+    <script src="../js/contact.js"></script>
+    <!-- Your external JS file -->
     <script src="../js/back.js"></script>
+    <script src="../js/theme.js"></script>
   </body>
 </html>

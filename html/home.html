@@ -8,7 +8,6 @@
       name="description"
       content="A&R Hardware offers high-quality hardware tools, equipment, and repairs with over 20 years of experience."
     />
-
     <link rel="stylesheet" href="../style/styles.css" />
   </head>
   <body>
@@ -22,9 +21,15 @@
             height="100"
           />
         </div>
-        <button id="theme-switch">
-          <img id="themeIcon" src="../public/lightMode.svg" alt="Theme Icon" />
-        </button>
+        <button onClick="toggleTheme()" id="theme-toggle-button">
+          <img
+            src="../public/lightMode.svg"
+            alt="sun/moon icon"
+            width="30"
+            height="30"
+            id="theme-icon"
+          /></button
+        >
         <h1>A&R Hardware</h1>
         <p>Your one-time stop for hardware tools and repairs!</p>
         <nav id="navbar">
@@ -41,26 +46,30 @@
 
     <main>
       <div class="slideshow-container">
+        <!-- Slide 1 -->
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
           <img id="storefront" src="../public/store.jpg" alt="storefront" />
           <div class="text">Store Front</div>
         </div>
 
+        <!-- Slide 2 -->
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
           <img src="../public/inside.jpg" alt="inside" />
           <div class="text">Inside</div>
         </div>
 
+        <!-- Slide 3 -->
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
           <img id="tools" src="../public/tools.jpg" alt="tools" />
           <div class="text">Tools</div>
         </div>
 
-        <a class="prev cursor-pointer" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next cursor-pointer" onclick="plusSlides(1)">&#10095;</a>
+        <!-- Left and Right arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
       <br />
 
@@ -94,6 +103,3 @@
     <script src="../js/theme.js" defer></script>
   </body>
 </html>
-
-/* Add light and dark mode styles here */ - JS /* add zoom in magnifier effect
-to product images */ - JS

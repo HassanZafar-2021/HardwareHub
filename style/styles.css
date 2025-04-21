@@ -86,7 +86,6 @@ a:hover {
 
 /* Header */
 #header {
-  background-color: var(--white);
   box-shadow: var(--box-shadow);
   padding: 15px 0;
   position: reltive;
@@ -200,7 +199,6 @@ a:hover {
 
 /* Owner section */
 .owner-info {
-  background-color: var(--white);
   padding: 60px 20px;
   margin: 40px 0;
   text-align: center;
@@ -300,6 +298,10 @@ a:hover {
   color: #fff;
 }
 
+.dark-mode owner-info {
+  background-color: black;
+  color: #fff;
+}
 .dark-mode header,
 .dark-mode footer,
 .dark-mode .container {
@@ -381,4 +383,71 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: lime;
+}
+
+/* Arrow buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  user-select: none;
+  z-index: 1000;
+}
+
+.prev {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+/* Add hover effect for arrows */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#theme-toggle-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--secondary-light);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 16px;
+  transition: var(--transition);
+}
+
+.location-container {
+  display: flex;
+  align-items: center; /* vertically center the text with the map */
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap; /* mobile responsiveness */
+  margin-bottom: 2rem;
+}
+
+.location-info {
+  max-width: 300px;
+}
+
+.map-frame {
+  border: 0;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
 }

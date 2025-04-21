@@ -12,6 +12,14 @@
          <aside>
        <button id="backBtn">go Back</button>
       </aside>
+   <button onClick="toggleTheme()" id="theme-toggle-button">
+          <img
+            src="../public/lightMode.svg"
+            alt="sun/moon icon"
+            width="30"
+            height="30"
+            id="theme-icon"
+          /></button>
       <h1><strong>About A&R Hardware Store</strong></h1>
       <p>
         Sole proprietorship owned business serving Brooklyn for X amount of years.
@@ -37,10 +45,19 @@
         </ul>
       </section>
 
-      <section id="location">
-        <h2>Location</h2>
-        <p>1959 Fulton St, Brooklyn, NY 11233</p>
-      </section>
+  <div class="location-container">
+  <div class="location-info">
+    <h2>Location</h2>
+    <p>1959 Fulton St, Brooklyn, NY 11233</p>
+  </div>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6051.567904325048!2d-73.91942802490324!3d40.678729039653135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c68de1b785b%3A0xaaa1dcdf42e20e4c!2sA%26R%20Hardware!5e0!3m2!1sen!2sus!4v1745272015150!5m2!1sen!2sus" 
+    class="map-frame" 
+    allowfullscreen="" 
+    title="A&R Hardware Store Location">
+  </iframe>
+</div>
+
     </main>
 
     <footer id="footer">
@@ -51,5 +68,6 @@
     </footer>
 
     <script src="../js/back.js"></script>
+    <script src="../js/theme.js" defer></script>
   </body>
 </
