@@ -364,7 +364,7 @@ a:hover {
 }
 
 #review-cards h3 {
-  color: var(--secondary);
+  color: darkgreen;
   font-size: 32px;
   margin-bottom: 15px;
 }
@@ -528,7 +528,7 @@ input[type="submit"]:hover {
   }
   100% {
     color: red;
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 
@@ -557,4 +557,35 @@ table {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   border: 2px solid black;
+}
+
+.dark-mode table {
+  background-color: #000;
+  color: #fff;
+}
+
+.chat-bubble {
+  position: relative;
+  text-align: center;
+}
+
+.chat-bubble:hover::after {
+  content: "and much more!";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--secondary);
+  font-size: 2rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+#popular {
+  text-align: center;
+  font-weight: bold;
+}
+
+#myMessage {
+  text-align: center;
 }
