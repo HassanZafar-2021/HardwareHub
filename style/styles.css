@@ -135,6 +135,53 @@ a:hover {
   color: white;
 }
 
+#story {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#Features {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#location {
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.vertical-line {
+  border-left: 6px solid black;
+  height: 610px;
+  position: absolute;
+  left: 35%;
+  margin-left: -3px;
+  top: 775px;
+}
+#location-details li {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.my-items {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
 #navbar a {
   color: var(--gray-dark);
   font-weight: 500;
@@ -354,6 +401,7 @@ a:hover {
 
 #review-cards {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -517,8 +565,10 @@ input[type="submit"]:hover {
 .map-frame {
   border: 0;
   width: 100%;
-  max-width: 600px;
-  height: 400px;
+  max-width: 700px;
+  height: 500px;
+  margin-top: 40px;
+  margin-right: 20px;
 }
 
 @keyframes titleGlow {
@@ -548,20 +598,22 @@ input[type="submit"]:hover {
 }
 
 table {
-  width: 100%;
+  width: 130%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 20px auto;
   font-size: 1.2rem;
   text-align: left;
-  background-color: var(--white);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   border: 2px solid black;
+  padding: 0 40px;
+  background-color: #fff9b1;
 }
 
 .dark-mode table {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff9b1;
+  color: black;
+  border: 2px solid white;
 }
 
 .chat-bubble {
@@ -569,23 +621,89 @@ table {
   text-align: center;
 }
 
+@keyframes chatBubble {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.45);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .chat-bubble:hover::after {
   content: "and much more!";
   position: absolute;
-  top: 100%;
-  left: 50%;
+  top: 90%;
+  left: 40%;
   transform: translateX(-50%);
   color: var(--secondary);
   font-size: 2rem;
   font-weight: bold;
   white-space: nowrap;
+  animation: chatBubble 1s infinite;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 #popular {
   text-align: center;
   font-weight: bold;
+  color: var(--primary);
 }
 
 #myMessage {
+  margin-top: 20px;
   text-align: center;
+}
+
+#g {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 32px;
+  font-family: sans-serif;
+}
+
+#o {
+  color: orangered;
+  font-weight: bold;
+  font-size: 32px;
+  font-family: sans-serif;
+}
+
+#Yelp {
+  color: red;
+  font-weight: bold;
+  font-size: 32px;
+  font-family: sans-serif;
+}
+
+#oo {
+  color: yellow;
+  font-weight: bold;
+  font-size: 32px;
+  font-family: sans-serif;
+}
+
+#gg {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 32px;
+  font-family: sans-serif;
+}
+
+#l {
+  color: green;
+  font-weight: bold;
+  font-size: 32px;
+  font-family: sans-serif;
+}
+
+#e {
+  color: red;
+  font-weight: bold;
+  font-size: 32px;
+  font-family: sans-serif;
 }
