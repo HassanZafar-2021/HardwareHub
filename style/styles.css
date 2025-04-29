@@ -336,7 +336,8 @@ a:hover {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   text-align: center;
-  background-color: var(--white);
+  background-color: hsl(var(--random-hue), 70%, 60%);
+  transition: background-color 0.3s ease;
 }
 
 .product:hover {

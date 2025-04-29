@@ -1,0 +1,17 @@
+[
+  { "name": "Keys", "image": "myKey.png", "category": "Hand Tools" },
+  { "name": "Locks", "image": "myLock.png", "category": "Hand Tools" },
+  {
+    "name": "Silicone Caulk",
+    "image": "mysilicone.png",
+    "category": "Hand Tools"
+  },
+  { "name": "Screwdriver", "image": "myScrew.png", "category": "Hand Tools" },
+  { "name": "Drill", "image": "myDrill.png", "category": "Power Tools" },
+  { "name": "Wrench", "image": "myWrench.png", "category": "Hand Tools" },
+  { "name": "Saw", "image": "mySaw.png", "category": "Cutting Tools" },
+  { "name": "Hammer", "image": "myHammer.png", "category": "Hand Tools" },
+  { "name": "Tape Measure", "image": "myTape.png", "category": "Hand Tools" },
+  { "name": "Nails", "image": "myNails.png", "category": "Hand Tools" }
+  
+]
