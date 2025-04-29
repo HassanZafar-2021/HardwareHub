@@ -5,8 +5,6 @@
   --secondary: darkorange;
   --secondary-light: #f39c12;
   --gray-dark: #333333;
-  --gray-medium: #777777;
-  --gray-light: #f5f5f5;
   --white: #ffffff;
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
@@ -22,6 +20,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.dark-mode #location {
+  color: white;
 }
 
 html {
@@ -434,16 +436,28 @@ a:hover {
   max-width: 800px;
 }
 
-#Prince {
-  color: purple;
+#Prince a {
+  color: black;
 }
 
-#Javeria {
-  color: pink;
+#Javeria a {
+  color: black;
 }
 
-#Ulric {
-  color: darkblue;
+#Ulric a {
+  color: black;
+}
+
+.dark-mode .review-card:hover #Prince a {
+  color: #4a6fa5;
+}
+
+.dark-mode .review-card:hover #Javeria a {
+  color: #4a6fa5;
+}
+
+.dark-mode .review-card:hover #Ulric a {
+  color: #4a6fa5;
 }
 
 .contact-wrapper {
@@ -660,13 +674,13 @@ table {
   }
 }
 .chat-bubble:hover::after {
-  content: "and much more!";
+  content: "🧰 and much more! 🔨";
   position: absolute;
   top: 90%;
-  left: 40%;
+  left: 35%;
   transform: translateX(-50%);
   color: var(--secondary);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   white-space: nowrap;
   animation: chatBubble 1s infinite;
@@ -747,6 +761,12 @@ table {
   font-weight: bold;
 }
 
+.dark-mode .main-paragraph {
+  background-color: yellow;
+  color: black;
+  text-decoration: black wavy underline;
+}
+
 .dark-mode .product h2 {
   color: black;
 }
@@ -754,4 +774,10 @@ table {
 .review-card:hover {
   background-color: #fff9b1;
   box-shadow: 0 0 10px rbga(0, 0, 0, 0.2);
+}
+
+.dark-mode .review-card:hover {
+  background-color: #fff9b1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: black;
 }
