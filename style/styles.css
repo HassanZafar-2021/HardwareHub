@@ -437,6 +437,25 @@ a:hover {
   max-width: 800px;
 }
 
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 black;
+  }
+  50% {
+    box-shadow: 0 0 10px orange;
+  }
+  100% {
+    box-shadow: 0 0 10px yellow;
+  }
+}
+
+#cardContainer:active {
+  animation: glow 0.5s infinite alternate;
+  box-shadow: 0 0 0 10px (0, 0, 0, 0.5);
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
 #Prince a {
   color: black;
 }
