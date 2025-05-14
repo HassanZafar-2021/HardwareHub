@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Explore a wide range of hardware supplies and tools at A&R Hardware Store, including paintbrushes, hammers, drills, and more."
+      content="Learn about A&R Hardware Store, a trusted hardware shop offering tools, expert advice, and great service in Brooklyn, NY."
     />
     <title>A&R Hardware Store</title>
     <link rel="stylesheet" href="../style/styles.css" />
@@ -45,37 +45,15 @@
         </nav>
       </div>
     </header>
+    <body>
+        <main>
+            <section id="news">
+                <h2>Tools & Hardware News</h2>
+                <div id="newsContainer"></div>
+            </section>
+        </main>
 
-    <main>
-      <h2 id="popular"><u>Most popular products!</u></h2>
-
-      <div class="product-controls">
-        <input type="text" id="searchBar" placeholder="Search tools..." />
-        <label for="categoryFilter">Filter by Category:</label>
-        <select id="categoryFilter">
-          <option value="">All Categories</option>
-          <option value="Hand Tools">Hand Tools</option>
-          <option value="Power Tools">Power Tools</option>
-          <option value="Cutting Tools">Cutting Tools</option>
-        </select>
-        <label for="sortBy">Sort by:</label>
-        <select id="sortBy">
-          <option value="">Sort</option>
-          <option value="az">A-Z</option>
-          <option value="za">Z-A</option>
-        </select>
-      </div>
-
-      <section class="products" id="cardContainer"></section>
-
-      <section class="chat-bubble">
-        <h2>⬇️</h2>
-      </section>
-    </main>
-
-    <script src="../js/theme.js"></script>
-    <script src="../js/back.js"></script>
-    <script src="../js/randomColor.js"></script>
-    <script src="../js/products.js"></script>
-  </body>
+        <script src="../js/news.js"></script>
+    </body>
 </html>
+
