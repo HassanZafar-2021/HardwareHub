@@ -8,10 +8,13 @@
   --white: #ffffff;
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
-  --border-radius: 4px;
   --container-width: 1200px;
   --font-main: "Roboto", sans-serif;
   --font-heading: "Montserrat", sans-serif;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --light-bg-overlay: rgba(255, 255, 255, 0.85);
+  --dark-bg-overlay: rgba(0, 0, 0, 0.6);
 }
 
 *,
@@ -693,26 +696,48 @@ table {
     transform: scale(1);
   }
 }
-.chat-bubble:hover::after {
-  content: "🧰 and much more! 🔨";
+
+.chat-extra {
+  display: none;
   position: absolute;
-  top: 90%;
-  left: 35%;
+  top: 100%;
+  left: 40%;
   transform: translateX(-50%);
-  color: var(--secondary);
   font-size: 2.5rem;
   font-weight: bold;
   white-space: nowrap;
   animation: chatBubble 1s infinite;
-  text-align: center;
-  align-items: center;
-  margin: 0 auto;
+  z-index: 10;
+}
+
+.chat-bubble:hover .chat-extra {
+  display: block;
+}
+
+.highlight {
+  color: #e63946;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    color: #f1c40f;
+  }
+  to {
+    color: #e63946;
+  }
 }
 
 #popular {
   text-align: center;
   font-weight: bold;
   color: var(--primary);
+}
+
+.dark-mode #popular {
+  text-align: center;
+  font-weight: bold;
+  color: white;
 }
 
 #myMessage {
@@ -800,4 +825,33 @@ table {
   background-color: #fff9b1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: black;
+}
+
+#news {
+  color: var(--primary);
+}
+
+#newsContainer {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  width: 60%;
+  max-width: 800px;
+  background-image: url("https://neal.fun/paper/paper.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--light-bg-overlay);
+}
+
+/* Optional: improve text readability */
+#newsContainer * {
+  color: black;
+}
+
+/* Dark mode override */
+.dark-mode #newsContainer {
+  background-color: var(--dark-bg-overlay);
 }
