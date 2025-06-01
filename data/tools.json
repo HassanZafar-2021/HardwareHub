@@ -1,6 +1,6 @@
 [
-  { "name": "Keys", "image": "images/myKey.png", "category": "Hand Tools" },
-  { "name": "Locks", "image": "images/myLock.png", "category": "Hand Tools" },
+  { "name": "Keys", "image": "/images/myKey.png", "category": "Hand Tools" },
+  { "name": "Locks", "image": "/images/myLock.png", "category": "Hand Tools" },
   {
     "name": "Silicone Caulk",
     "image": "images/mysilicone.png",
@@ -11,22 +11,22 @@
     "image": "images/myScrew.png",
     "category": "Hand Tools"
   },
-  { "name": "Drill", "image": "images/myDrill.png", "category": "Power Tools" },
+  { "name": "Drill", "image": "/images/myDrill.png", "category": "Power Tools" },
   {
     "name": "Wrench",
-    "image": "images/myWrench.png",
+    "image": "/images/myWrench.png",
     "category": "Hand Tools"
   },
-  { "name": "Saw", "image": "images/mySaw.png", "category": "Cutting Tools" },
+  { "name": "Saw", "image": "/images/mySaw.png", "category": "Cutting Tools" },
   {
     "name": "Hammer",
-    "image": "images/myHammer.png",
+    "image": "/images/myHammer.png",
     "category": "Hand Tools"
   },
   {
     "name": "Tape Measure",
-    "image": "images/myTape.png",
+    "image": "/images/myTape.png",
     "category": "Hand Tools"
   },
-  { "name": "Nails", "image": "images/myNails.png", "category": "Hand Tools" }
+  { "name": "Nails", "image": "/images/myNails.png", "category": "Hand Tools" }
 ]
