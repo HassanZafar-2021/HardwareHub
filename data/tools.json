@@ -8,16 +8,16 @@
   },
   {
     "name": "Screwdriver",
-    "image": "omages/myScrew.png",
+    "image": "images/myScrew.png",
     "category": "Hand Tools"
   },
-  { "name": "Drill", "image": "myDrill.png", "category": "Power Tools" },
+  { "name": "Drill", "image": "images/myDrill.png", "category": "Power Tools" },
   {
     "name": "Wrench",
     "image": "images/myWrench.png",
     "category": "Hand Tools"
   },
-  { "name": "Saw", "image": "mySaw.png", "category": "Cutting Tools" },
+  { "name": "Saw", "image": "images/mySaw.png", "category": "Cutting Tools" },
   {
     "name": "Hammer",
     "image": "images/myHammer.png",
