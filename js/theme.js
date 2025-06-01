@@ -13,4 +13,6 @@ function toggleTheme() {
   localStorage.theme = isDark ? "dark" : "light";
 
   icon.src = isDark ? "./images/darkMode.svg" : "./images/lightMode.svg";
+  console.log("Theme:", localStorage.theme);
+  console.log("Image:", icon.src);
 }
