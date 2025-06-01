@@ -1,6 +1,6 @@
 let tools = [];
 
-fetch("../data/tools.json")
+fetch("data/tools.json")
   .then((res) => res.json())
   .then((data) => {
     tools = data;

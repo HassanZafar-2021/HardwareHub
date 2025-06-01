@@ -2,7 +2,7 @@ const apiKey = "cb2ea7b268644d3e86497a4ffd5c5a3a";
 const url = `https://newsapi.org/v2/everything?q="A%26R+Hardware"+AND+"Brooklyn"+AND+"hardware"&language=en&pageSize=5&apiKey=${apiKey}`;
 
 // Fetch the local JSON file (news.json) from your server
-fetch("../data/news.json")
+fetch("data/news.json")
   .then((res) => res.json())
   .then((data) => {
     const container = document.getElementById("newsContainer");
