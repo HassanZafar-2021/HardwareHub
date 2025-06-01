@@ -6,12 +6,27 @@
     "image": "mysilicone.png",
     "category": "Hand Tools"
   },
-  { "name": "Screwdriver", "image": "public/myScrew.png", "category": "Hand Tools" },
-  { "name": "Drill", "image": "public/Drill.png", "category": "Power Tools" },
-  { "name": "Wrench", "image": "public/myWrench.png", "category": "Hand Tools" },
-  { "name": "Saw", "image": "public/mySaw.png", "category": "Cutting Tools" },
-  { "name": "Hammer", "image": "public/myHammer.png", "category": "Hand Tools" },
-  { "name": "Tape Measure", "image": "public/myTape.png", "category": "Hand Tools" },
-  { "name": "Nails", "image": "public/myNails.png", "category": "Hand Tools" }
-  
+  {
+    "name": "Screwdriver",
+    "image": "myScrew.png",
+    "category": "Hand Tools"
+  },
+  { "name": "Drill", "image": "myDrill.png", "category": "Power Tools" },
+  {
+    "name": "Wrench",
+    "image": "myWrench.png",
+    "category": "Hand Tools"
+  },
+  { "name": "Saw", "image": "mySaw.png", "category": "Cutting Tools" },
+  {
+    "name": "Hammer",
+    "image": "myHammer.png",
+    "category": "Hand Tools"
+  },
+  {
+    "name": "Tape Measure",
+    "image": "myTape.png",
+    "category": "Hand Tools"
+  },
+  { "name": "Nails", "image": "myNails.png", "category": "Hand Tools" }
 ]
