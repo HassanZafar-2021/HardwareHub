@@ -41,7 +41,7 @@ function renderCards(items) {
     const card = document.createElement("div");
     card.className = "product";
     card.innerHTML = `
-      <img src="public/${item.image}" alt="${item.name}" />
+    <img src="${item.image}" alt="${item.name}" />
       <h2>${item.name}</h2>
     `;
 
