@@ -12,5 +12,5 @@ function toggleTheme() {
   const isDark = element.classList.toggle("dark-mode");
   localStorage.theme = isDark ? "dark" : "light";
 
-  icon.src = isDark ? "./images/darkmode.svg" : "./images/lightMode.svg";
+  icon.src = isDark ? "./images/darkMode.svg" : "./images/lightMode.svg";
 }
