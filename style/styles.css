@@ -46,9 +46,16 @@ body {
 .container {
   background-color: darkgray;
   width: 100%;
-  max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 20px;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .nav,
+  .sidebar {
+    display: none;
+  }
 }
 
 /* Typography */
@@ -301,7 +308,7 @@ img {
 /* Owner section */
 .owner-info {
   padding: 60px 20px;
-  
+
   margin: 40px 0;
   text-align: center;
   border-radius: var(--border-radius);
