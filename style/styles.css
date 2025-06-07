@@ -878,7 +878,6 @@ table {
   line-height: 1.5;
   margin: 20px 0;
   text-align: center;
-  text-decoration: wavy underline;
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-weight: bold;
 }
@@ -886,7 +885,6 @@ table {
 .dark-mode .main-paragraph {
   background-color: yellow;
   color: black;
-  text-decoration: black wavy underline;
 }
 
 .dark-mode .product h2 {
