@@ -187,14 +187,14 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.vertical-line {
+/* .vertical-line {
   border-left: 6px solid black;
   height: 610px;
   position: absolute;
   left: 35%;
   margin-left: -3px;
   top: 775px;
-}
+} */
 #location-details li {
   color: var(--primary);
   font-weight: bold;
