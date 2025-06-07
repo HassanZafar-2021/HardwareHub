@@ -49,6 +49,7 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   padding: 1rem;
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -72,7 +73,7 @@ h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
 
 h2 {
@@ -308,21 +309,41 @@ img {
 /* Owner section */
 .owner-info {
   padding: 60px 20px;
-
   margin: 40px 0;
   text-align: center;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 }
 
+@media (max-width: 768px) {
+  .owner-info {
+    padding: 30px 10px;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+  }
+
+  #navbar li {
+    margin: 0;
+  }
+}
+
 .owner-info img {
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto 20px;
   border: 5px solid var(--primary);
 }
 
@@ -405,6 +426,21 @@ img {
   margin: 0 auto;
 }
 
+#backBtn {
+  background-color: greenyellow;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#backBtn:hover {
+  background-color: #45a049;
+}
 
 .dark-mode {
   background-color: #000;
@@ -615,9 +651,9 @@ input[type="submit"]:hover {
 }
 
 #theme-toggle-button {
-  position: fixed;
-  top: 20px;
-  right: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   background-color: var(--secondary-light);
   color: var(--white);
   border: none;
@@ -626,6 +662,7 @@ input[type="submit"]:hover {
   cursor: pointer;
   font-size: 16px;
   transition: var(--transition);
+  z-index: 100;
 }
 
 .location-container {
@@ -837,10 +874,11 @@ table {
 }
 
 .main-paragraph {
-  font-size: 24px;
+  font-size: clamp(1rem, 4vw, 1.5rem);
   line-height: 1.5;
   margin: 20px 0;
   text-align: center;
+  text-decoration: wavy underline;
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-weight: bold;
 }
@@ -848,7 +886,7 @@ table {
 .dark-mode .main-paragraph {
   background-color: yellow;
   color: black;
-
+  text-decoration: black wavy underline;
 }
 
 .dark-mode .product h2 {
