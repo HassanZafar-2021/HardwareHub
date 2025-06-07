@@ -405,21 +405,6 @@ img {
   margin: 0 auto;
 }
 
-#backBtn {
-  background-color: greenyellow;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#backBtn:hover {
-  background-color: #45a049;
-}
 
 .dark-mode {
   background-color: #000;
@@ -856,7 +841,6 @@ table {
   line-height: 1.5;
   margin: 20px 0;
   text-align: center;
-  text-decoration: wavy underline;
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-weight: bold;
 }
@@ -864,7 +848,7 @@ table {
 .dark-mode .main-paragraph {
   background-color: yellow;
   color: black;
-  text-decoration: black wavy underline;
+
 }
 
 .dark-mode .product h2 {
