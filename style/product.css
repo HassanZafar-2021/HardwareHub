@@ -1,0 +1,148 @@
+/* General Reset & Root Vars */
+:root {
+    --primary: #800000;
+    --secondary-light: #f0ad4e;
+    --white: #fff;
+    --dark: #333;
+    --border-radius: 10px;
+    --transition: 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: var(--white);
+    color: var(--dark);
+    padding-bottom: 40px;
+  }
+  
+  /* Header */
+  #header {
+    background: #f5f5f5;
+    padding: 20px 15px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .logo img {
+    max-width: 80px;
+    height: auto;
+  }
+  
+  #main-title {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: var(--primary);
+  }
+  
+  .main-paragraph {
+    font-style: italic;
+  }
+  
+  #theme-toggle-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--secondary-light);
+    border: none;
+    padding: 8px;
+    border-radius: var(--border-radius);
+  }
+  
+  /* Navbar */
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  #navbar li {
+    margin: 8px;
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: bold;
+    transition: color var(--transition);
+  }
+  
+  #navbar a:hover {
+    color: var(--primary);
+  }
+  
+  /* Main Title */
+  #popular {
+    text-align: center;
+    margin: 20px auto;
+    color: var(--primary);
+    font-size: 1.5rem;
+  }
+  
+  /* Controls */
+  .product-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .product-controls input,
+  .product-controls select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+  }
+  
+  /* Products Grid */
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 0 15px;
+  }
+  
+  /* Chat Bubble */
+  .chat-bubble {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.2rem;
+  }
+  
+  .chat-extra .highlight {
+    font-weight: bold;
+    color: var(--primary);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
+    #main-title {
+      font-size: 1.4rem;
+    }
+  
+    .product-controls {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-controls input,
+    .product-controls select {
+      width: 90%;
+    }
+  
+    .products {
+      grid-template-columns: 1fr;
+      padding: 0 10px;
+    }
+  }
+  
