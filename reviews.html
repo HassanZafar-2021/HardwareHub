@@ -10,6 +10,7 @@
     <title>A&R Hardware Store - Reviews</title>
     <link rel="stylesheet" href="./style/styles.css" />
   </head>
+
   <body>
     <header id="header">
       <div class="container">
@@ -23,16 +24,20 @@
         </div>
         <button onClick="toggleTheme()" id="theme-toggle-button">
           <img
-            src="./imageslightMode.svg"
-            alt="sun/moon icon"
+            src="./images/lightMode.svg"
+            alt="Toggle light or dark theme"
             width="30"
             height="30"
             id="theme-icon"
           />
         </button>
-        <h1 id="main-title">A&R Hardware</h1>
-        <p class="main-paragraph">  <span>🛑 Your stop shop for hardware tools and repairs! 🏬</span></p>
-        <nav id="navbar">
+        <div role="banner">
+          <h1 id="main-title">A&R Hardware</h1>
+          <p class="main-paragraph">
+            <span>🛑 Your stop shop for hardware tools and repairs! 🏬</span>
+          </p>
+        </div>
+        <nav id="navbar" aria-label="Main navigation">
           <ul>
             <li><a href="index.html">🏠Home</a></li>
             <li><a href="about.html">📓About Us</a></li>
@@ -46,68 +51,73 @@
     </header>
 
     <main>
-      <section id="review-cards">
-        <h3>What Our Customers Are Saying:</h3>
+      <section id="review-cards" aria-labelledby="reviews-heading">
+        <h2 id="reviews-heading">What Our Customers Are Saying:</h2>
         <p>
-          Please leave a review: <a target="_blank" rel="noopener" href="https://www.google.com/maps/place/A%26R+Hardware/@40.678729,-73.919428,16z/data=!4m12!1m3!8m2!1e1!2s105718527667926531289!3m7!1s0x89c25c68de1b785b:0xaaa1dcdf42e20e4c!8m2!3d40.678725!4d-73.9168531!9m1!1b1!16s%2Fg%2F1262jsq16?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D"<span id="g">G</span><span id="o">o</span
-          ><span id="oo">o</span><span id="gg">g</span><span id="l">l</span
-          ><span id="e">e</span></a> or <a target="_blank" rel="noopener" href="https://www.yelp.com/biz/a-and-r-hardware-supply-brooklyn" id="Yelp">Yelp</a></span>
+          Please leave a review on 
+          <a target="_blank" rel="noopener" href="https://www.google.com/maps/place/A%26R+Hardware/@40.678729,-73.919428,16z/data=!4m12!1m3!8m2!1e1!2s105718527667926531289!3m7!1s0x89c25c68de1b785b:0xaaa1dcdf42e20e4c!8m2!3d40.678725!4d-73.9168531!9m1!1b1!16s%2Fg%2F1262jsq16?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D"
+            ><span id="g">G</span><span id="o">o</span><span id="oo">o</span><span id="gg">g</span><span id="l">l</span><span id="e">e</span></a>
+          or 
+          <a target="_blank" rel="noopener" href="https://www.yelp.com/biz/a-and-r-hardware-supply-brooklyn" id="Yelp">Yelp</a>.
         </p>
 
-        <div class="review-card">
-          <h4 id="Prince">
+        <article class="review-card" aria-labelledby="Prince">
+          <h3 id="Prince">
             <a
-              href="https://www.google.com/maps/contrib/111629299825219211206/place/ChIJW3gb3mhcwokRTA7iQt_coao/@36.1546896,-77.6681712,5z/data=!4m4!1m3!8m2!1e1!2s111629299825219211206?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D"
+              href="https://www.google.com/maps/contrib/111629299825219211206/place/ChIJW3gb3mhcwokRTA7iQt_coao"
               target="_blank"
               rel="noopener"
               >Prince Ayo</a
             >
-          </h4>
+          </h3>
           <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
-          <p>
-            "The store have everything you want. And there is someone ready to
-            assist you all the time. It's very easy to locate whenever u want to
-            buy unlike all those big stores that u have to walk for several
-            hours to locate what u want. And most time, no one is ready to
-            assist you. I found out that it's even cheaper there than the big
-            stores. The staffs here are friendly and care for their customers."
-          </p>
-        </div>
+          <blockquote>
+            The store have everything you want. And there is someone ready to
+            assist you all the time. It's very easy to locate whenever you want
+            to buy unlike all those big stores where you walk for hours to find
+            what you want. Cheaper than big stores. Staff are friendly and care
+            for their customers.
+          </blockquote>
+        </article>
 
-        <div class="review-card">
-          <h4 id="Javeria">
+        <article class="review-card" aria-labelledby="Javeria">
+          <h3 id="Javeria">
             <a
-              href="https://www.google.com/maps/contrib/105718527667926531289/place/ChIJW3gb3mhcwokRTA7iQt_coao/@42.3067394,-48.4816085,3z/data=!4m4!1m3!8m2!1e1!2s105718527667926531289?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D"
+              href="https://www.google.com/maps/contrib/105718527667926531289/place/ChIJW3gb3mhcwokRTA7iQt_coao"
               target="_blank"
               rel="noopener"
               >Javeria Zafar</a
             >
-          </h4>
+          </h3>
           <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
-          <p>
-            "The owner is so nice and helpful (he even gives advice for anything
+          <blockquote>
+            The owner is so nice and helpful (he even gives advice for anything
             construction related). Has pretty useful things that you might need
-            (ex: key copy, locks, screws, and so forth)."
-          </p>
-        </div>
+            (ex: key copy, locks, screws, and so forth).
+          </blockquote>
+        </article>
 
-        <div class="review-card">
-          <h4 id="Ulric">
+        <article class="review-card" aria-labelledby="Ulric">
+          <h3 id="Ulric">
             <a
-              href="https://www.google.com/maps/contrib/103348380882318245137/place/ChIJW3gb3mhcwokRTA7iQt_coao/@40.678725,-74.081648,11z/data=!4m4!1m3!8m2!1e1!2s103348380882318245137?hl=en&entry=ttu&g_ep=EgoyMDI1MDQyMS4wIKXMDSoASAFQAw%3D%3D"
+              href="https://www.google.com/maps/contrib/103348380882318245137/place/ChIJW3gb3mhcwokRTA7iQt_coao"
               target="_blank"
               rel="noopener"
               >Ulric Bourne</a
             >
-          </h4>
+          </h3>
           <p><strong>Rating:</strong> ⭐⭐⭐⭐</p>
-          <p>
-            "Manager very knowledgeable and the store have a bit of everything
-            for your home improvement."
-          </p>
-        </div>
+          <blockquote>
+            Manager very knowledgeable and the store has a bit of everything
+            for your home improvement.
+          </blockquote>
+        </article>
       </section>
     </main>
+
+    <footer>
+      <p>&copy; 2025 A&R Hardware Supply. All rights reserved.</p>
+    </footer>
 
     <script src="../js/back.js"></script>
     <script src="../js/theme.js" defer></script>

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./style/styles.css" />
     <link rel="icon" href="./images/mylogo.png" type="image/png" />
   </head>
+
   <body>
     <header id="header">
       <div class="container">
@@ -25,20 +26,22 @@
         <button onClick="toggleTheme()" id="theme-toggle-button">
           <img
             src="./images/lightMode.svg"
-            alt="sun/moon icon"
+            alt="Toggle light or dark theme"
             width="30"
             height="30"
             id="theme-icon"
           />
         </button>
-        <h1 id="main-title">A&R Hardware Supply</h1>
-        <p class="main-paragraph">
-          <span
-            >🛑 Your stop shop for hardware tools and repairs! (Cash
-            Only)🏬</span
-          >
-        </p>
-        <nav id="navbar">
+        <div role="banner">
+          <h1 id="main-title">A&R Hardware Supply</h1>
+          <p class="main-paragraph">
+            <span
+              >🛑 Your stop shop for hardware tools and repairs! (Cash
+              Only)🏬</span
+            >
+          </p>
+        </div>
+        <nav id="navbar" aria-label="Main navigation">
           <ul>
             <li><a href="index.html">🏠Home</a></li>
             <li><a href="about.html">📓About Us</a></li>
@@ -52,42 +55,47 @@
     </header>
 
     <main>
-      <div class="slideshow-container">
+      <section
+        class="slideshow-container"
+        aria-label="Image slideshow of A&R Hardware"
+      >
         <!-- Slide 1 -->
-        <div class="mySlides fade">
+        <figure class="mySlides fade">
           <div class="numbertext">1 / 3</div>
           <img
             id="storefront"
             src="./images/storefront.jpeg"
-            alt="storefront"
+            alt="A&R Hardware storefront exterior"
           />
-          <div class="text">Store Front</div>
-        </div>
+          <figcaption class="text">Store Front</figcaption>
+        </figure>
 
         <!-- Slide 2 -->
-        <div class="mySlides fade">
+        <figure class="mySlides fade">
           <div class="numbertext">2 / 3</div>
           <img
             id="inside"
             src="./images/inside.jpeg"
-            alt="inside"
-            id="inside"
+            alt="Interior view of A&R Hardware store"
           />
-          <div class="text">Inside</div>
-        </div>
+          <figcaption class="text">Inside</figcaption>
+        </figure>
 
         <!-- Slide 3 -->
-        <div class="mySlides fade">
+        <figure class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <img id="tools" src="./images/keymachine.jpeg" alt="tools" />
-          <div class="text">Key Machine</div>
-        </div>
+          <img
+            id="tools"
+            src="./images/keymachine.jpeg"
+            alt="Key cutting machine at A&R Hardware"
+          />
+          <figcaption class="text">Key Machine</figcaption>
+        </figure>
 
-        <!-- Left and Right arrows -->
+        <!-- Arrows -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br />
+      </section>
 
       <div style="text-align: center">
         <span class="dot cursor-pointer" onclick="currentSlide(1)"></span>
@@ -103,12 +111,16 @@
         </p>
         <img
           src="./images/owner.jpeg"
-          alt="Iqbal Zafar"
+          alt="Portrait of Raja Zafar, owner of A&R Hardware"
           width="600"
           height="600"
         />
       </section>
     </main>
+
+    <footer>
+      <p>&copy; 2025 A&R Hardware Supply. All rights reserved.</p>
+    </footer>
 
     <script src="./js/home.js"></script>
     <script src="./js/theme.js" defer></script>

@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Learn about A&R Hardware Store, a trusted hardware shop offering tools, expert advice, and great service in Brooklyn, NY.">
+    <meta
+      name="description"
+      content="Learn about A&R Hardware Store, a trusted hardware shop offering tools, expert advice, and great service in Brooklyn, NY."
+    />
     <title>A&R Hardware Store</title>
     <link rel="stylesheet" href="./style/styles.css" />
   </head>
+
   <body>
     <header id="header">
       <div class="container">
@@ -21,16 +25,19 @@
         <button onClick="toggleTheme()" id="theme-toggle-button">
           <img
             src="./images/lightMode.svg"
-            alt="sun/moon icon"
+            alt="Toggle light or dark theme"
             width="30"
             height="30"
             id="theme-icon"
-          /></button
-        >
-        <h1 id="main-title">A&R Hardware</h1>
-        <p class="main-paragraph">  <span>🛑 Your stop shop for hardware tools and repairs! 🏬</span>
-        </p>
-        <nav id="navbar">
+          />
+        </button>
+        <div role="banner">
+          <h1 id="main-title">A&R Hardware</h1>
+          <p class="main-paragraph">
+            <span>🛑 Your stop shop for hardware tools and repairs! 🏬</span>
+          </p>
+        </div>
+        <nav id="navbar" aria-label="Main navigation">
           <ul>
             <li><a href="index.html">🏠Home</a></li>
             <li><a href="about.html">📓About Us</a></li>
@@ -43,15 +50,18 @@
       </div>
     </header>
 
-
     <main>
       <section id="story">
         <h2><u>Our Story</u></h2>
         <p>
-          We started with a passion for providing top-notch tools and expert advice. Over the years, we've built strong relationships with our customers, becoming a trusted source for all their hardware needs.
+          We started with a passion for providing top-notch tools and expert
+          advice. Over the years, we've built strong relationships with our
+          customers, becoming a trusted source for all their hardware needs.
         </p>
       </section>
-      <hr>
+
+      <hr />
+
       <section id="Features">
         <h2><u>Features</u></h2>
         <ul>
@@ -63,62 +73,76 @@
           <li>Expert advice on hardware and construction from owner</li>
         </ul>
       </section>
-<hr>
-  <div class="location-container">
-  <div class="location-info">
-    <h2 id="location"><u>Location</u></h2>
-    <ul>
-      <li class="my-items">1959 Fulton St, Brooklyn, NY 11233</li>
-      <li class="my-items">Phone: (347)-955-5035</li>
-    </ul>
 
-     <table>
-        <tr>
-          <th><u>Days</u></th>
-          <th><u>Hours</u></th>
-        </tr>
-        <tr>
-          <td>Monday</td>
-          <td>10 AM - 7 PM (6 pm in Winter)</td>
-        </tr>
-        <tr>
-          <td>Tuesday</td>
-          <td>10 AM - 7 PM (6 pm in Winter)</td>
-        </tr>
-        <tr>
-          <td>Wednesday</td>
-          <td>10 AM - 7 PM (6 pm in Winter)</td>
-        </tr>
-        <tr>
-          <td>Thursday</td>
-          <td>10 Am - 7 PM (6 pm in Winter)</td>
-        </tr>
-        <tr>
-          <td>Friday</td>
-          <td>10 AM - 7 PM (6 pm in Winter)</td>
-        </tr>
-        <tr>
-          <td>Saturday</td>
-          <td>10 AM - 7 PM (6pm in Winter)</td>
-        </tr>
-        <tr>
-          <td>Sunday</td>
-          <td><strong>Closed</strong></td>
-        </tr>
-        </tr>
-      </table>
-  </div>
-  <!-- <div class="vertical-line"></div> -->
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6051.567904325048!2d-73.91942802490324!3d40.678729039653135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c68de1b785b%3A0xaaa1dcdf42e20e4c!2sA%26R%20Hardware!5e0!3m2!1sen!2sus!4v1745272015150!5m2!1sen!2sus" 
-    class="map-frame" 
-    allowfullscreen="" 
-    title="A&R Hardware Store Location">
-  </iframe>
-</div>
+      <hr />
 
-</main>
+      <section id="location-info" class="location-container">
+        <div class="location-info">
+          <h2 id="location"><u>Location</u></h2>
+          <address>
+            <ul>
+              <li class="my-items">1959 Fulton St, Brooklyn, NY 11233</li>
+              <li class="my-items">
+                Phone: <a href="tel:3479555035">(347)-955-5035</a>
+              </li>
+            </ul>
+          </address>
+
+          <table>
+            <thead>
+              <tr>
+                <th><u>Days</u></th>
+                <th><u>Hours</u></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>10 AM - 7 PM (6 pm in Winter)</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>10 AM - 7 PM (6 pm in Winter)</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>10 AM - 7 PM (6 pm in Winter)</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>10 AM - 7 PM (6 pm in Winter)</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>10 AM - 7 PM (6 pm in Winter)</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>10 AM - 7 PM (6 pm in Winter)</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td><strong>Closed</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6051.567904325048!2d-73.91942802490324!3d40.678729039653135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c68de1b785b%3A0xaaa1dcdf42e20e4c!2sA%26R%20Hardware!5e0!3m2!1sen!2sus!4v1745272015150!5m2!1sen!2sus"
+          class="map-frame"
+          allowfullscreen
+          loading="lazy"
+          title="A&R Hardware Store Location"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 A&R Hardware Supply. All rights reserved.</p>
+    </footer>
 
     <script src="./js/back.js"></script>
     <script src="./js/theme.js" defer></script>
   </body>
+</html>

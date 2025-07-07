@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Learn about A&R Hardware Store, a trusted hardware shop offering tools, expert advice, and great service in Brooklyn, NY."
+      content="Stay updated with the latest news and hardware tips from A&R Hardware, your local Brooklyn tool shop."
     />
-    <title>A&R Hardware Store</title>
+    <title>A&R Hardware Store - News & Guides</title>
     <link rel="stylesheet" href="./style/styles.css" />
   </head>
+
   <body>
     <header id="header">
       <div class="container">
@@ -24,17 +25,19 @@
         <button onClick="toggleTheme()" id="theme-toggle-button">
           <img
             src="./images/lightMode.svg"
-            alt="sun/moon icon"
+            alt="Toggle light or dark theme"
             width="30"
             height="30"
             id="theme-icon"
           />
         </button>
-        <h1 id="main-title">A&R Hardware</h1>
-        <p class="main-paragraph">
-          <span>🛑 Your stop shop for hardware tools and repairs! 🏬</span>
-        </p>
-        <nav id="navbar">
+        <div role="banner">
+          <h1 id="main-title">A&R Hardware</h1>
+          <p class="main-paragraph">
+            <span>🛑 Your stop shop for hardware tools and repairs! 🏬</span>
+          </p>
+        </div>
+        <nav id="navbar" aria-label="Main navigation">
           <ul>
             <li><a href="index.html">🏠Home</a></li>
             <li><a href="about.html">📓About Us</a></li>
@@ -46,12 +49,21 @@
         </nav>
       </div>
     </header>
+
     <main>
-      <section id="news">
-        <h2 id="myNewsHeader">News/Guides</h2>
-        <div id="newsContainer"></div>
+      <section id="news" aria-labelledby="myNewsHeader">
+        <h2 id="myNewsHeader">News & Guides</h2>
+        <p>
+          Check out the latest updates, DIY guides, and store announcements from
+          A&R Hardware.
+        </p>
+        <div id="newsContainer" role="list"></div>
       </section>
     </main>
+
+    <footer>
+      <p>&copy; 2025 A&R Hardware Supply. All rights reserved.</p>
+    </footer>
 
     <script src="./js/news.js"></script>
     <script src="./js/theme.js"></script>

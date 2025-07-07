@@ -356,7 +356,7 @@ img {
 }
 
 /* Footer */
-#footer {
+footer {
   background-color: var(--gray-dark);
   color: var(--white);
   padding: 50px 0 20px;

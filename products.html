@@ -10,6 +10,7 @@
     <title>A&R Hardware Store</title>
     <link rel="stylesheet" href="./style/styles.css" />
   </head>
+
   <body>
     <header id="header">
       <div class="container">
@@ -24,17 +25,19 @@
         <button onClick="toggleTheme()" id="theme-toggle-button">
           <img
             src="./images/lightMode.svg"
-            alt="sun/moon icon"
+            alt="Toggle light or dark theme"
             width="30"
             height="30"
             id="theme-icon"
           />
         </button>
-        <h1 id="main-title">A&R Hardware</h1>
-        <p class="main-paragraph">
-          <span>🛑 Your stop shop for hardware tools and repairs! 🏬</span>
-        </p>
-        <nav id="navbar">
+        <div role="banner">
+          <h1 id="main-title">A&R Hardware</h1>
+          <p class="main-paragraph">
+            <span>🛑 Your stop shop for hardware tools and repairs! 🏬</span>
+          </p>
+        </div>
+        <nav id="navbar" aria-label="Main navigation">
           <ul>
             <li><a href="index.html">🏠Home</a></li>
             <li><a href="about.html">📓About Us</a></li>
@@ -48,34 +51,45 @@
     </header>
 
     <main>
-      <h2 id="popular"><u>Most popular products!</u></h2>
+      <section aria-labelledby="popular">
+        <h2 id="popular"><u>Most popular products!</u></h2>
 
-      <div class="product-controls">
-        <input type="text" id="searchBar" placeholder="Search tools..." />
-        <label for="categoryFilter">Filter by Category:</label>
-        <select id="categoryFilter">
-          <option value="">All Categories</option>
-          <option value="Hand Tools">Hand Tools</option>
-          <option value="Power Tools">Power Tools</option>
-          <option value="Cutting Tools">Cutting Tools</option>
-        </select>
-        <label for="sortBy">Sort by:</label>
-        <select id="sortBy">
-          <option value="">Sort</option>
-          <option value="az">A-Z</option>
-          <option value="za">Z-A</option>
-        </select>
-      </div>
+        <div class="product-controls">
+          <label for="searchBar" class="visually-hidden">Search tools</label>
+          <input type="text" id="searchBar" placeholder="Search tools..." />
 
-      <section class="products" id="cardContainer"></section>
+          <label for="categoryFilter">Filter by Category:</label>
+          <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <option value="Hand Tools">Hand Tools</option>
+            <option value="Power Tools">Power Tools</option>
+            <option value="Cutting Tools">Cutting Tools</option>
+          </select>
 
-      <div class="chat-bubble">
-        ⬇️
-        <div class="chat-extra">
-          <span class="highlight">and many more!</span>
+          <label for="sortBy">Sort by:</label>
+          <select id="sortBy">
+            <option value="">Sort</option>
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+          </select>
         </div>
-      </div>
+
+        <section class="products" id="cardContainer" aria-label="Product cards">
+          <!-- Dynamic product cards inserted via JS -->
+        </section>
+
+        <div class="chat-bubble" role="note" aria-label="Product notice">
+          ⬇️
+          <div class="chat-extra">
+            <span class="highlight">and many more!</span>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <p>&copy; 2025 A&R Hardware Supply. All rights reserved.</p>
+    </footer>
 
     <script src="./js/theme.js"></script>
     <script src="./js/back.js"></script>

@@ -10,6 +10,7 @@
     <title>A&R Hardware Store - Contact Us</title>
     <link rel="stylesheet" href="./style/styles.css" />
   </head>
+
   <body>
     <header id="header">
       <div class="container">
@@ -24,17 +25,19 @@
         <button onClick="toggleTheme()" id="theme-toggle-button">
           <img
             src="./images/lightMode.svg"
-            alt="sun/moon icon"
+            alt="Toggle light or dark theme"
             width="30"
             height="30"
             id="theme-icon"
           />
         </button>
-        <h1 id="main-title">A&R Hardware</h1>
-        <p class="main-paragraph">
-          <span>🛑 Your stop shop for hardware tools and repairs! 🏬</span>
-        </p>
-        <nav id="navbar">
+        <div role="banner">
+          <h1 id="main-title">A&R Hardware</h1>
+          <p class="main-paragraph">
+            <span>🛑 Your stop shop for hardware tools and repairs! 🏬</span>
+          </p>
+        </div>
+        <nav id="navbar" aria-label="Main navigation">
           <ul>
             <li><a href="index.html">🏠Home</a></li>
             <li><a href="about.html">📓About Us</a></li>
@@ -48,46 +51,61 @@
     </header>
 
     <main>
-      <p id="myMessage">
-        Have questions, comments, or concerns? Contact the owner at
-        (347)-955-5035 or send a message using the contact form below. ✉️
-      </p>
-      <form id="contact-form" name="contact-form">
-        <div class="contact-wrapper">
-          <fieldset class="contact-form">
-            <legend>Contact Form</legend>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required /><br />
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required /><br />
-          </fieldset>
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Us</h2>
+        <p id="myMessage">
+          Have questions, comments, or concerns? Contact the owner at
+          <a href="tel:3479555035">(347)-955-5035</a> or send a message using
+          the contact form below. ✉️
+        </p>
 
-          <fieldset class="contact-form">
-            <legend>Any feedback is appreciated!</legend>
-            <label for="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="8"
-              cols="80"
-              required
-            ></textarea
-            ><br />
-            <input
-              type="submit"
-              value="Submit"
-              aria-label="Submit Contact Form"
-            />
-          </fieldset>
-        </div>
-      </form>
+        <form
+          id="contact-form"
+          name="contact-form"
+          aria-describedby="myMessage"
+        >
+          <div class="contact-wrapper">
+            <fieldset class="contact-form">
+              <legend>Contact Information</legend>
+
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required /><br />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required /><br />
+            </fieldset>
+
+            <fieldset class="contact-form">
+              <legend>Your Message</legend>
+
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="8"
+                cols="80"
+                required
+              ></textarea
+              ><br />
+
+              <input
+                type="submit"
+                value="Submit"
+                aria-label="Submit Contact Form"
+              />
+            </fieldset>
+          </div>
+        </form>
+      </section>
     </main>
+
+    <footer>
+      <p>&copy; 2025 A&R Hardware Supply. All rights reserved.</p>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <!-- EmailJS SDK -->
     <script src="./js/contact.js"></script>
-    <!-- Your external JS file -->
     <script src="./js/back.js"></script>
     <script src="./js/theme.js"></script>
   </body>
