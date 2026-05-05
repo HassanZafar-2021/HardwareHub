@@ -19,10 +19,6 @@ HardwareHub is a freelance web development project where I am building a custom 
 
 Run website by visiting URL
 
-## Usage
-
-assets/image.png
-
 ## Credits
 
 No Collaborators
