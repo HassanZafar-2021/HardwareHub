@@ -542,7 +542,7 @@ main {
   letter-spacing: 0.03em;
 }
 
-.dark-mode .product h2 { color: var(--primary); }
+.dark-mode .product h2 { color: #e8eef4; }
 
 /* Chat bubble */
 .chat-bubble {
@@ -809,6 +809,9 @@ input[type="submit"]:hover {
   margin-bottom: 1rem;
 }
 
+.dark-mode #story,
+.dark-mode #Features { color: #e8eef4; }
+
 #location {
   color: var(--primary);
   font-weight: 700;
@@ -962,8 +965,15 @@ footer p { margin: 0; }
   color: #8899aa;
 }
 
+/* ── General text & links ── */
 .dark-mode a { color: #7aadda; }
 .dark-mode a:hover { color: var(--accent-light); }
+
+.dark-mode p,
+.dark-mode li,
+.dark-mode address,
+.dark-mode blockquote,
+.dark-mode label { color: #c8d4e0; }
 
 .dark-mode button {
   background: rgba(255,255,255,0.08);
@@ -971,11 +981,47 @@ footer p { margin: 0; }
   border: 1px solid rgba(255,255,255,0.15);
 }
 
-.dark-mode .owner-info,
-.dark-mode .contact-wrapper,
+/* ── Headings ── */
+.dark-mode h1, .dark-mode h2, .dark-mode h3,
+.dark-mode h4, .dark-mode h5, .dark-mode h6 {
+  color: #e8eef4;
+}
+
+/* ── Main content sections ── */
+.dark-mode main { color: #d0d8e0; }
+
+/* ── About page ── */
+.dark-mode #story,
+.dark-mode #Features { color: #e8eef4; }
+
+.dark-mode #story p,
+.dark-mode #Features ul,
+.dark-mode #Features li { color: #c8d4e0; }
+
+.dark-mode .my-items { color: #c8d4e0; }
+
+/* ── Owner section ── */
+.dark-mode .owner-info {
+  background: #1a2028;
+  border-color: #2a3340;
+}
+
+.dark-mode .owner-info h2 { color: #e8eef4; }
+.dark-mode .owner-info p  { color: #c8d4e0; }
+
+/* ── Products page ── */
 .dark-mode .product-controls {
   background: #1a2028;
   border-color: #2a3340;
+}
+
+.dark-mode .product-controls label { color: #c8d4e0; }
+
+.dark-mode .product-controls input[type="text"],
+.dark-mode .product-controls select {
+  background: #232b35;
+  color: #d0d8e0;
+  border-color: #3a4a5a;
 }
 
 .dark-mode .product {
@@ -983,22 +1029,59 @@ footer p { margin: 0; }
   border-color: #2d3a48;
 }
 
-.dark-mode .product:hover { border-color: var(--accent); background: #1e2630; }
+.dark-mode .product h2       { color: #e8eef4; }
+.dark-mode .product p        { color: #c8d4e0; }
+.dark-mode .product:hover    { border-color: var(--accent); background: #1e2630; }
+
+/* ── Reviews page ── */
+.dark-mode #review-cards h2     { color: #e8eef4; }
+.dark-mode #review-cards > p    { color: #c8d4e0; }
+.dark-mode #review-cards h3     { color: #e8eef4; }
 
 .dark-mode .review-card {
   background: #1a2028;
   border-color: #2d3a48;
 }
 
+.dark-mode .review-card blockquote { color: #c8d4e0; }
+
 .dark-mode .review-card:hover {
   background: #1e2630;
   color: #d0d8e0;
 }
 
-.dark-mode h1, .dark-mode h2, .dark-mode h3,
-.dark-mode h4, .dark-mode h5, .dark-mode h6 {
-  color: #e8eef4;
+/* Reviewer name links inside review cards */
+.dark-mode #Prince a,
+.dark-mode #Javeria a,
+.dark-mode #Ulric a { color: #7aadda; }
+
+/* ── Contact page ── */
+.dark-mode .contact-wrapper {
+  background: #1a2028;
+  border-color: #2a3340;
 }
+
+.dark-mode #myMessage              { color: #c8d4e0; }
+.dark-mode .contact-form           { background: #1e2630; border-color: #3a4a5a; }
+.dark-mode .contact-form legend    { color: #e8eef4; }
+.dark-mode .contact-form label     { color: #c8d4e0; }
+
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea {
+  background: #232b35;
+  color: #d0d8e0;
+  border-color: #3a4a5a;
+}
+
+/* ── Table (About page hours) ── */
+.dark-mode table {
+  background: #1e2328;
+  border-color: #333;
+  color: #eee;
+}
+
+.dark-mode table td          { color: #ddd; border-color: #333; }
+.dark-mode table tr:nth-child(even) td { background: #252a30; }
 
 /* ═══════════════════════════════════════════
    RESPONSIVE
