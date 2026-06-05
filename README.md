@@ -2,6 +2,8 @@
 
 > A custom website built for a family-owned hardware store in Brooklyn, NY — crafted with care as a freelance web development project.
 
+## Live-URL
+
 URL: https://arhardwaresupply.com/
 
 ---
@@ -14,6 +16,7 @@ A&R Hardware Supply is a multi-page business website for a local Brooklyn hardwa
 
 ## Table of Contents
 
+- [URL](#live-url)
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -48,7 +51,7 @@ Navigate through the site using the top navigation bar:
 
 ## Credits
 
-Sole developer — no collaborators.
+1. Hassan Zafar - https://github.com/HassanZafar-2021
 
 ---
 
